@@ -187,18 +187,27 @@
     <h2>Опционально: свой товар вместо генерации с нуля</h2>
     <p class="lede">
       Загружаете фото товара — сравниваете image-editing модели. Товар остаётся как есть,
-      меняется только сцена вокруг него.
+      меняется только сцена вокруг него. Ниже — реальный прогон: одно исходное фото, два
+      результата от разных моделей одновременно.
     </p>
+    <div class="shot">
+      <img src="assets/photo-edit-source.jpg" alt="Исходное фото товара — сейф" style="width:220px;border-radius:12px;border:1px solid var(--border);box-shadow:var(--card-shadow);display:block;margin:0 auto 8px;" />
+      <p style="text-align:center;color:var(--fg-muted);font-size:14px;">Исходное фото товара</p>
+    </div>
     <div class="problem-solution">
       <div>
-        <img src="assets/photo-edit-source.jpg" alt="Исходное фото товара — сейф" style="width:100%;border-radius:12px;border:1px solid var(--border);box-shadow:var(--card-shadow);display:block;" />
-        <p style="text-align:center;color:var(--fg-muted);font-size:14px;margin-top:12px;">Исходное фото товара</p>
+        <img src="assets/photo-edit-variant-a.png" alt="Вариант A — результат первой модели" style="width:100%;border-radius:12px;border:1px solid var(--border);box-shadow:var(--card-shadow);display:block;" />
+        <p style="text-align:center;color:var(--fg-muted);font-size:14px;margin-top:12px;">Вариант A</p>
       </div>
       <div>
-        <img src="assets/photo-edit-example.png" alt="Результат: тот же сейф в новой сцене" style="width:100%;border-radius:12px;border:1px solid var(--border);box-shadow:var(--card-shadow);display:block;" />
-        <p style="text-align:center;color:var(--fg-muted);font-size:14px;margin-top:12px;">Результат генерации — товар тот же, сцена новая</p>
+        <img src="assets/photo-edit-variant-b.png" alt="Вариант B — результат второй модели" style="width:100%;border-radius:12px;border:1px solid var(--border);box-shadow:var(--card-shadow);display:block;" />
+        <p style="text-align:center;color:var(--fg-muted);font-size:14px;margin-top:12px;">Вариант B</p>
       </div>
     </div>
+    <p style="text-align:center;color:var(--fg-muted);font-size:14px;margin-top:16px;">
+      Товар в обоих вариантах узнаваемо тот же — отличается только сцена и стиль. Именно это
+      маркетолог и сравнивает вслепую, прежде чем узнать модель и цену.
+    </p>
   </section>
 
   <section id="shots">
